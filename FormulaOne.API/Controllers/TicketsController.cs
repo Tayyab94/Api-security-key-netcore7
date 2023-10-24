@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FormulaOne.API.Controllers
 {
-   
+    [ServiceFilter(typeof(ApikeyAuthenticationFilter))]
     [Route("api/[controller]")]
     [ApiController]
     public class TicketsController : ControllerBase
@@ -19,7 +19,7 @@ namespace FormulaOne.API.Controllers
             this._context = context;
         }
 
-        [ServiceFilter(typeof(ApikeyAuthenticationFilter))]
+        //[ServiceFilter(typeof(ApikeyAuthenticationFilter))]
         [HttpGet]
         public async Task<IActionResult>GetAllTicket()
         {

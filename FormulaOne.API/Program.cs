@@ -2,6 +2,7 @@ using FormulaOne.API.Authentication;
 using FormulaOne.API.Configurations;
 using FormulaOne.API.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +26,34 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(s =>
+{
+    s.AddSecurityDefinition("Apikey", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
+    {
+        Description = "Api Key to Secure the APIs",
+        Type = SecuritySchemeType.ApiKey,
+        Name = AuthConfig.ApikeyHeader,
+        In = ParameterLocation.Header,
+        Scheme = "ApikeyScheme"
+    });
+
+    var scheme = new OpenApiSecurityScheme()
+    {
+        Reference = new OpenApiReference()
+        {
+            Type = ReferenceType.SecurityScheme,
+            Id = "Apikey"
+        },
+        In = ParameterLocation.Header,
+    };
+
+    var requirement = new OpenApiSecurityRequirement()
+    {
+        {scheme, new List<string>() }
+    };
+
+    s.AddSecurityRequirement(requirement);
+});
 builder.Services.AddScoped<ApikeyAuthenticationFilter>();
 
 var app = builder.Build();
