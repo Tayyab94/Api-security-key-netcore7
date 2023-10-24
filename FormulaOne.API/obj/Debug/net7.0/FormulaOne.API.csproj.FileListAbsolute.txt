@@ -67,3 +67,4 @@ C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\refint\For
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne.API.pdb
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne.API.genruntimeconfig.cache
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\ref\FormulaOne.API.dll
+C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne.API.sourcelink.json

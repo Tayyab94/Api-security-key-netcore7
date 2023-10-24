@@ -26,6 +26,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ApikeyAuthenticationFilter>();
 
 var app = builder.Build();
 
@@ -39,8 +40,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
+//if we want to use Authentication Apikey as an Action filter then this middleware should be comment
 // Middleware to check, Valid api-key or not.. 
-app.UseMiddleware<ApikeyMiddleware>();
+//app.UseMiddleware<ApikeyMiddleware>();
 
 app.UseAuthorization();
 

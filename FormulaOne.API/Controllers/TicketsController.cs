@@ -1,10 +1,12 @@
-﻿using FormulaOne.API.Models;
+﻿using FormulaOne.API.Authentication;
+using FormulaOne.API.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace FormulaOne.API.Controllers
 {
+   
     [Route("api/[controller]")]
     [ApiController]
     public class TicketsController : ControllerBase
@@ -17,7 +19,7 @@ namespace FormulaOne.API.Controllers
             this._context = context;
         }
 
-
+        [ServiceFilter(typeof(ApikeyAuthenticationFilter))]
         [HttpGet]
         public async Task<IActionResult>GetAllTicket()
         {
