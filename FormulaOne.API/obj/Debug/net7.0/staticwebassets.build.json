@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "dQbAoMDxsxYflgKnVr/281rEgt/8NQkN+yPWWXw/olk=",
+  "Hash": "5XCI40K6a1fgu0W3XgRIc1/MmWiif0TeHhBAJSItyNA=",
   "Source": "FormulaOne.API",
   "BasePath": "_content/FormulaOne.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "FormulaOne.API\\wwwroot",
+      "Source": "FormulaOne.API",
+      "ContentRoot": "C:\\Users\\tayya\\Desktop\\FormulaOne.API\\FormulaOne.API\\wwwroot\\",
+      "BasePath": "_content/FormulaOne.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\tayya\\Desktop\\FormulaOne.API\\FormulaOne.API\\wwwroot\\swagger\\custom.js",
+      "SourceId": "FormulaOne.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tayya\\Desktop\\FormulaOne.API\\FormulaOne.API\\wwwroot\\",
+      "BasePath": "_content/FormulaOne.API",
+      "RelativePath": "swagger/custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\swagger\\custom.js"
+    }
+  ]
 }

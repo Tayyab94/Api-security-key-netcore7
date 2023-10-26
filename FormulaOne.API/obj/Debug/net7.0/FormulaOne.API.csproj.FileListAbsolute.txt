@@ -68,3 +68,4 @@ C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne.API.genruntimeconfig.cache
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\ref\FormulaOne.API.dll
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne.API.sourcelink.json
+C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\bin\Debug\net7.0\FormulaOne.API.staticwebassets.runtime.json

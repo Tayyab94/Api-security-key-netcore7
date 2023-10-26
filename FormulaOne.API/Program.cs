@@ -28,7 +28,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(s =>
 {
-    s.AddSecurityDefinition("Apikey", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
+    
+    s.SwaggerDoc("v1", new OpenApiInfo { Title = "MyAPI", Version = "v1" });
+
+    s.AddSecurityDefinition("Apikey", new OpenApiSecurityScheme
     {
         Description = "Api Key to Secure the APIs",
         Type = SecuritySchemeType.ApiKey,
@@ -37,22 +40,70 @@ builder.Services.AddSwaggerGen(s =>
         Scheme = "ApikeyScheme"
     });
 
-    var scheme = new OpenApiSecurityScheme()
+    //s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    //{
+    //    In = ParameterLocation.Header,
+    //    Description = "Please enter token",
+    //    Name = "Authorization",
+    //    Type = SecuritySchemeType.Http,
+    //    BearerFormat = "JWT",
+    //    Scheme = "bearer"
+    //});
+    var securityRequirement = new OpenApiSecurityRequirement
     {
-        Reference = new OpenApiReference()
         {
-            Type = ReferenceType.SecurityScheme,
-            Id = "Apikey"
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Apikey"
+                }
+            },
+            new List<string>()
         },
-        In = ParameterLocation.Header,
+        //{
+        //    new OpenApiSecurityScheme
+        //    {
+        //        Reference = new OpenApiReference
+        //        {
+        //            Type = ReferenceType.SecurityScheme,
+        //            Id = "Bearer"
+        //        }
+        //    },
+        //    new List<string>()
+        //}
     };
 
-    var requirement = new OpenApiSecurityRequirement()
-    {
-        {scheme, new List<string>() }
-    };
+    s.AddSecurityRequirement(securityRequirement);
+ 
 
-    s.AddSecurityRequirement(requirement);
+    //s.SwaggerDoc("v1", new OpenApiInfo { Title = "MyAPI", Version = "v1" });
+    //s.AddSecurityDefinition("Apikey", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
+    //{
+    //    Description = "Api Key to Secure the APIs",
+    //    Type = SecuritySchemeType.ApiKey,
+    //    Name = AuthConfig.ApikeyHeader,
+    //    In = ParameterLocation.Header,
+    //    Scheme = "ApikeyScheme"
+    //});
+
+    //var scheme = new OpenApiSecurityScheme()
+    //{
+    //    Reference = new OpenApiReference()
+    //    {
+    //        Type = ReferenceType.SecurityScheme,
+    //        Id = "Apikey"
+    //    },
+    //    In = ParameterLocation.Header,
+    //};
+
+    //var requirement = new OpenApiSecurityRequirement()
+    //{
+    //    {scheme, new List<string>() }
+    //};
+
+    //s.AddSecurityRequirement(requirement);
 });
 builder.Services.AddScoped<ApikeyAuthenticationFilter>();
 

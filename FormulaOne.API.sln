@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34112.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormulaOne.API", "FormulaOne.API\FormulaOne.API.csproj", "{A34E0826-9316-4F5A-B0D7-1638EE8F2B2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormulaOne.API", "FormulaOne.API\FormulaOne.API.csproj", "{A34E0826-9316-4F5A-B0D7-1638EE8F2B2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AB45D24A-45AC-4944-AB0D-EDA8751EB9EA}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

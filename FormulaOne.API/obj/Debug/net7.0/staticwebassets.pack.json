@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\tayya\\Desktop\\FormulaOne.API\\FormulaOne.API\\wwwroot\\swagger\\custom.js",
+      "PackagePath": "staticwebassets\\swagger\\custom.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FormulaOne.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.FormulaOne.API.props",
+      "PackagePath": "build\\FormulaOne.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.FormulaOne.API.props",
+      "PackagePath": "buildMultiTargeting\\FormulaOne.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.FormulaOne.API.props",
+      "PackagePath": "buildTransitive\\FormulaOne.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
