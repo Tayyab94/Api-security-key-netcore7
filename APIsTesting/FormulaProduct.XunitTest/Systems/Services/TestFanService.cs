@@ -21,7 +21,7 @@ namespace FormulaProduct.XunitTest.Systems.Services
         public async Task GetAllFans_OnInvoked_HttpGet()
         {
             //Arrange
-            var Url = "www.mywebsite.com/fans";
+            var Url = "https://dummy.restapiexample.com/api/v1/employees";
 
             var response= FansFixtures.GetFans();
 
@@ -49,7 +49,7 @@ namespace FormulaProduct.XunitTest.Systems.Services
         public async Task GetAllFans_OnInvoked_GetListOfFans()
         {
             //Arrange
-            var Url = "www.mywebsite.com/fans";
+            var Url = "https://dummy.restapiexample.com/api/v1/employees";
 
             var response = FansFixtures.GetFans();
 
@@ -75,9 +75,9 @@ namespace FormulaProduct.XunitTest.Systems.Services
         public async Task GetAllFans_OnInvoked_GetReturnEmptyList()
         {
             //Arrange
-            var Url = "www.mywebsite.com/fans";
+            var Url = "https://dummy.restapiexample.com/api/v1/employees3";
 
-            
+
             var mockHandler = MockHttpHandler<Fan>.SetupReturnNotFound();
             var httpClient = new HttpClient(mockHandler.Object);
 

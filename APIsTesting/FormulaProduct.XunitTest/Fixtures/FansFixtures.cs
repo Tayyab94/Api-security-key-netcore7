@@ -14,15 +14,19 @@ namespace FormulaProduct.XunitTest.Fixtures
             new Fan()
             {
                 Id=1,
-                Email="demo@gmail.com",
-                Name="demo1"
+               employee_name= "Tiger Nixon",
+      employee_salary= 320800,
+      employee_age= 61,
+      profile_image= ""
             },
 
             new Fan()
             {
                 Id=2,
-                Email="donled@gmail.com",
-                Name="donled"
+               employee_name= "Garrett Winters\"",
+      employee_salary= 170750,
+      employee_age= 64,
+      profile_image= ""
             },
         };
     }
