@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PzWSs5EUrNbnTNmTAjHIW3yxoPaeZ+yXmEHrRcNneATgjR6bebDuvYy0InTp2vFjnS79jVvMME5mm/pXuoxXQA==",
+  "dgSpecHash": "YMLjhRLkqdePK4XFp0QCTfe7vDn8X3x30Qk/7tqyJFFEMwLErCg+YdULF1gJD0UQypN8cq8IpbVVGDOa4E3QSg==",
   "success": true,
   "projectFilePath": "C:\\Users\\tayya\\Desktop\\FormulaOne.API\\FormulaOne.API\\FormulaOne.API.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\tayya\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\tayya\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\tayya\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\tayya\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\tayya\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\tayya\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\tayya\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",

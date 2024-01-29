@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("0e70ce13-e36f-4959-996d-2a0cc3cad419")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FormulaOne.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f5bb79bcdb94aa1f9dc4daf13c502145dd488fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+426b257c8b0e4624c62926f0ec585828c2b8c16e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FormulaOne.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FormulaOne.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -61,7 +61,6 @@ C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\staticweba
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.FormulaOne.API.props
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\scopedcss\bundle\FormulaOne.API.styles.css
-C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne.API.csproj.CopyComplete
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne.API.dll
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\refint\FormulaOne.API.dll
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne.API.pdb
@@ -69,3 +68,4 @@ C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\ref\FormulaOne.API.dll
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaOne.API.sourcelink.json
 C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\bin\Debug\net7.0\FormulaOne.API.staticwebassets.runtime.json
+C:\Users\tayya\Desktop\FormulaOne.API\FormulaOne.API\obj\Debug\net7.0\FormulaO.D7CA322F.Up2Date

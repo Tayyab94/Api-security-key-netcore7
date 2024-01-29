@@ -1,0 +1,58 @@
+[
+  {
+    "ContainingType": "VersioningAPIs.Controllers.v1.StudentController",
+    "Method": "GetStudents",
+    "RelativePath": "api/v1/Student/GetStudents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VersioningAPIs.Controllers.v2.StudentController",
+    "Method": "GetStudents",
+    "RelativePath": "api/v2/Student/GetStudents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VersioningAPIs.Controllers.v2.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "api/v{apiVersion}/WeatherForecast/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "apiVersion",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[VersioningAPIs.WeatherForecast, VersioningAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
