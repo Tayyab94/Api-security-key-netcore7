@@ -1,5 +1,6 @@
 using Asp.Versioning;
 using Microsoft.Extensions.Options;
+using VersioningAPIs.Interfaces;
 using VersioningAPIs.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +31,8 @@ builder.Services.AddApiVersioning(op =>
     opt.SubstituteApiVersionInUrl = true;
 });
 
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 
 var app = builder.Build();
 
@@ -53,6 +56,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseExceptionHandler();
 app.MapControllers();
 
 app.Run();
